@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+	int num,re;
+	printf("Enter a 2 digit number: ");
+	scanf("%d",&num);
+	re=num%10*10+(num/10);
+	printf("REVERSED NO IS %d",re);
+	return 0;
+	
+}
