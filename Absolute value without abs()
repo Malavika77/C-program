@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int a,ab;
+	printf("Enter the number:");
+	scanf("%d",&a);
+	if(a<0)
+	{
+		ab=a*-1;
+		printf("absolute value of %d is %d",a,ab);
+	}
+	else
+	printf("absolute value of %d is %d",a,a);
+	
+return 0;
+}
