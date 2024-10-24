@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main()
+{
+	float e,ip,b,p,c,perc;
+	printf("Enter marks for english:");
+	scanf("%f",&e);
+	printf("Enter marks for ip:");
+	scanf("%f",&ip);
+	printf("Enter marks for biology:");
+	scanf("%f",&b);
+	printf("Enter marks for physics:");
+	scanf("%f",&p);
+	printf("Enter marks for chemistry:");
+	scanf("%f",&c);
+	perc=((e+ip+b+p+c)/500)*100;
+	printf("Percentage is %f \n",perc);
+	if(perc>=90)
+	{
+		printf("Your grade is A");
+	}
+	else if(perc>=80)
+	{
+		printf("Your grade is B");
+	}
+	else if(perc>=70)
+	{
+		printf("Your grade is C");
+	}	
+	else if(perc>=60)
+	{
+		printf("Your grade is D");
+	}
+	else if(perc>=50)
+	{
+		printf("Your grade is E");
+	}
+	else
+	{
+		printf("Your grade is F \n FAILED");
+	}
+	return 0;
+	
+}
