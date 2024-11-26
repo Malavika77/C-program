@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+	int cal,a,b;
+	printf("1. addition\t 2.subtraction\t 3.multiplication\t 4.division \n");
+	printf("enter two numbers:");
+	scanf("%d%d",&a,&b);
+	printf("Enter the operation(1-4): ");
+	scanf("%d",&cal);
+	switch(cal)
+	{
+		case 1:
+			printf("\n %d+%d = %d",a,b,a+b);
+			break;
+		case 2:
+			printf("\n %d-%d = %d",a,b,a-b);
+			break;
+		case 3:
+			printf("\n %d*%d = %d",a,b,a*b);
+			break;
+		case 4:
+			printf("\n %d/%d = %d",a,b,a/b);
+		break;
+		default:printf("\n operation no not matched");
+		break;
+	}
+}
