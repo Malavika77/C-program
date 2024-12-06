@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int n,s;
+	printf("enter no :");
+	scanf("%d",&n);
+	s=0;
+	do
+	{
+		s=s+(n%10);
+		n=n/10;
+	}
+	while(n!=0);
+	printf("sum is %d",s);
+	return 0;
+}
