@@ -1,0 +1,37 @@
+#include<stdio.h>
+int forw(int n)
+{
+	int i;
+	for(i=1;i<=n;i++)
+	{
+		printf("%d \t ",i);
+		
+	}
+	printf("\n");
+	return;
+}
+int back(int n)
+{	int i;
+	for(i=n;i>=1;i--)
+	{
+		printf("%d \t ",i);
+		
+	}
+	printf("\n");
+return 0;
+}
+	int main()
+	{
+		int f,b,n;
+		printf("enter the no:");
+		scanf("%d",&n);
+		if(n>0)
+		{
+			f=forw(n);
+			b=back(n);
+		}
+		else
+			printf("no is not positive");
+		return 0;
+		
+	}
