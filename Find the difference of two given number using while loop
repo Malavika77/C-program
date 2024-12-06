@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int num1,num2;
+    printf("enter two numbers: ");
+    scanf("%d%d",&num1,&num2);
+    int diff= 0;
+    if(num1>num2)
+    {
+	
+    	while (num1 > num2) 
+		{
+        	num1--; 
+        	diff++; 
+   		}
+   	}
+   	else
+   	{
+   		while (num2 > num1) 
+		{
+        	num2--; 
+        	diff++; 
+   		}
+	}
+    printf("The difference is: %d\n", diff);
+
+    return 0;
+}
