@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() 
+{
+    int a, b;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    while (b != 0) 
+	{
+        int temp = b;
+        //printf("print b %d and temp %d \n",b,temp);
+        b = a % b;
+        //printf("print b %d and a %d \n",b,a);
+        a = temp;
+        //printf("print a %d and temp %d \n",a,temp);
+    }
+    printf("GCD of the given numbers is: %d\n", a);
+
+    return 0;
+}
